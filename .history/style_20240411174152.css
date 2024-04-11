@@ -1,0 +1,29 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  --verde: #47CBAD;
+  --azul: #f2f2f2;
+  --roxo: #AF55CC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+section {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+section.home {
+    display: flex;
+
+    background-color: #AF55CC;
+}

@@ -1,0 +1,60 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  --lugar: #FFD793;
+  --personagem: #4074F5;
+  --tecnologia: #28A37A;
+  --ano: #AF55CC;
+
+  --bg-secundaria: #4074F5;
+  --bg-claro: #FFFFFF;
+  --bg: #EDF1F4;
+
+  --border: #E8EAEE;
+  --border-active: #4074F5;
+
+  --btn-right: #2FA852;
+  --btn-missed: #EB3C2E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+section {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.home {
+    display: flex;
+    background-color: var(--bg);
+}
+
+section.home > div.head-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 300px;
+    background-color: var(--bg-secundaria);
+}
+
+section.home > div.head-game img {
+    width: 170px;
+}
+
+section.home > div {
+    background-color: var(--lugar);
+}
+
