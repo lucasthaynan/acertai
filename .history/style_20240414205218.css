@@ -1,0 +1,419 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  --lugar: #FFD793;
+  --personagem: #4074F5;
+  --tecnologia: #28A37A;
+  --objeto: #FE8369;
+  --ano: #AF55CC;
+
+  --bg-secundaria: #4074F5;
+  --bg-claro: #FFFFFF;
+  --bg: #EDF1F4;
+
+  --text-claro: #FFFFFF;
+  --text-escuro: #6A6A6A;
+
+  --border: #E8EAEE;
+  --border-active: #4074F5;
+
+  --btn-right: #2FA852;
+  --btn-missed: #EB3C2E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+section {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+p {
+    font-size: 0.7rem;
+    color: var(--text-escuro);
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* HOME */
+
+section.home {
+    /* display: flex; */
+    display: none;
+    background-color: var(--bg);
+}
+
+section.home > div.head-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 230px;
+    background-color: var(--bg-secundaria);
+}
+
+section.home > div.head-game img {
+    width: 170px;
+}
+
+section.home > div.option-times {
+    margin-top: 50px;
+}
+
+section.home > div.option-times > div {
+
+    background-color: var(--btn-right);
+    color: var(--text-claro);
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin-top: 30px;
+    
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+
+    /* filter: drop-shadow(2px 2px 3px #d4d4d4); */
+
+}
+
+
+/* INFOS TIMES */
+
+section.info-times {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+section.info-times .container {
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    background-color: var(--bg-claro);
+}
+
+section.info-times .avatar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.info-times .options-avatar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+section.info-times .avatar img {
+    width: 60px;
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+section.info-times .avatar .select > img {
+    border: 2px solid var(--border-active); 
+}
+
+section.info-times .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+section.info-times .name label,
+section.info-times .avatar p {
+    font-size: 0.7rem;
+    color: var(--text-escuro);
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 7px 0px;
+}
+
+section.info-times .container-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+section.info-times .container-btn input {
+
+    background-color: var(--btn-right);
+    color: var(--text-claro);
+    text-align: center;
+    padding: 8px 25px;
+    border-radius: 50px;
+    margin-top: 15px;
+    
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    border: 0px;
+
+}
+
+
+
+section.info-times {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+
+/* RANDOM CATEGORY */
+
+section.random-category {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+section.random-category .category {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+section.random-category .category p {
+    background-color: rgba(0, 0, 0, 0.208);
+    color: var(--text-claro);
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin-top: 15px;
+    
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    border: 0px;
+}
+
+section.random-category .category.view {
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lugar);
+}
+
+
+section.random-category .category.lugar {
+    background-color: var(--lugar);
+}
+
+section.random-category .category.personagem {
+    background-color: var(--personagem);
+}
+
+section.random-category .category.tecnologia {
+    background-color: var(--tecnologia);
+}
+
+section.random-category .category.ano {
+    background-color: var(--ano);
+}
+
+section.random-category .category.objeto {
+    background-color: var(--objeto);
+}
+
+
+
+/* SELECT TIPS */
+
+section.select-tips {
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+
+
+section.select-tips .container {
+    width: 250px;
+    height: 380px;
+    border-radius: 30px;
+    background-color: var(--bg-claro);
+}
+
+section.select-tips .container.options-game {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.select-tips .container.options-game .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 20px 20px;
+}
+
+section.select-tips .container.options-game .options div.btn {
+    width: 20px;
+    height: 20px;
+    background-color: var(--lugar);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-claro);
+    cursor: pointer;
+}
+
+
+section.select-tips .container.options-game .options div.btn.select {
+    opacity: 0.4;
+    cursor: none;
+    pointer-events: none;
+}
+
+section.select-tips .container.tip,
+section.select-tips .container.tip > div {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section.select-tips .container.tip > div {
+    padding: 30px 20px;
+    gap: 20px;
+}
+section.select-tips .container.tip .number-tip {
+    width: 20px;
+    height: 20px;
+    background-color: var(--lugar);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-claro);
+    cursor: pointer;
+}
+
+section.select-tips .container.tip .phrase {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.select-tips .container.tip .phrase p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+}
+
+section.select-tips .container.tip .btns-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+section.select-tips .container.tip .right,
+section.select-tips .container.tip .missed {
+
+    color: var(--text-claro);
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 50px;
+    margin-top: 15px;
+    width: 55px;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    border: 0px;
+}
+
+section.select-tips .container.tip .right {
+    background-color: var(--btn-right);
+}
+
+section.select-tips .container.tip .missed {
+    background-color: var(--btn-missed);
+
+}
+
+section.select-tips .container.tip .result-correct p:nth-child(1) {
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+    
+}
+
+section.select-tips .container.tip .result-correct p.name-correct {
+    text-align: center;
+    font-size: 1rem;
+    font-style: bold;
+    font-weight: 400;
+    text-transform: none;
+    
+}
+
+

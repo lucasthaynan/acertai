@@ -1,0 +1,107 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  --lugar: #FFD793;
+  --personagem: #4074F5;
+  --tecnologia: #28A37A;
+  --ano: #AF55CC;
+
+  --bg-secundaria: #4074F5;
+  --bg-claro: #FFFFFF;
+  --bg: #EDF1F4;
+
+  --text-claro: #FFFFFF;
+
+  --border: #E8EAEE;
+  --border-active: #4074F5;
+
+  --btn-right: #2FA852;
+  --btn-missed: #EB3C2E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+section {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+section.home {
+    /* display: flex; */
+    display: none;
+    background-color: var(--bg);
+}
+
+section.home > div.head-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 230px;
+    background-color: var(--bg-secundaria);
+}
+
+section.home > div.head-game img {
+    width: 170px;
+}
+
+section.home > div.option-times {
+    margin-top: 50px;
+}
+
+section.home > div.option-times > div {
+
+    background-color: var(--btn-right);
+    color: var(--text-claro);
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin-top: 30px;
+    
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+
+    /* filter: drop-shadow(2px 2px 3px #d4d4d4); */
+
+}
+
+
+section.info-times {
+    display: flex;
+    /* display: none; */
+    background-color: var(--bg);
+}
+
+section.info-times .container {
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: var(--bg-claro);
+}
+
+
+section.info-times .avatar img {
+    width: 80px;
+}
